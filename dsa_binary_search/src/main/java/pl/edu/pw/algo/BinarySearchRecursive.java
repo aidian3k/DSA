@@ -1,9 +1,11 @@
 package pl.edu.pw.algo;
 
-public class BinarySearchRecursive  implements SearcherRecursive{
+import pl.edu.pw.algo.Interfaces.SearcherRecursive;
+
+public class BinarySearchRecursive  implements SearcherRecursive {
 
     @Override
-    public int binarySearch(int[] arr, int left, int right, int target) {
+    public int searchRecursive(int[] arr, int left, int right, int target) {
 
         if( left > right || arr == null){
             return -1;
@@ -14,9 +16,9 @@ public class BinarySearchRecursive  implements SearcherRecursive{
         if(arr[mid]==target){
             return mid;
         } else if(arr[mid] > target) {
-            return binarySearch(arr, left,mid-1, target);
+            return searchRecursive(arr, left,mid-1, target);
         } else {
-            return binarySearch(arr, mid+1, right, target);
+            return searchRecursive(arr, mid+1, right, target);
         }
     }
 

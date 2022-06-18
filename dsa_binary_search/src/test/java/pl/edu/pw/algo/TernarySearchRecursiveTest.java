@@ -6,13 +6,13 @@ import pl.edu.pw.algo.Interfaces.SearcherRecursive;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-public class BinarySearchRecursiveTest {
+public class TernarySearchRecursiveTest {
 
     private SearcherRecursive searcher;
 
     @BeforeEach
     public void setUp() {
-        searcher = new BinarySearchRecursive();
+        searcher = new TernarySearchRecursive();
     }
 
     @Test

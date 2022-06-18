@@ -2,16 +2,17 @@ package pl.edu.pw.algo;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import pl.edu.pw.algo.Interfaces.SearcherIterative;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class BinarySearchTest {
+class TernarySearchIterativeTest {
 
     private SearcherIterative searcher;
 
     @BeforeEach
     void setUp() {
-        searcher = new BinarySearch();
+        searcher = new TernarySearchIterative();
     }
 
     @Test
@@ -21,7 +22,7 @@ class BinarySearchTest {
         int toFind = 0;
 
         //when
-        int result = searcher.binarySearch(nums, toFind);
+        int result = searcher.searchIterative(nums, toFind);
 
         //then
         int expected = -1;
@@ -35,7 +36,7 @@ class BinarySearchTest {
         int toFind = 0;
 
         //when
-        int result = searcher.binarySearch(nums, toFind);
+        int result = searcher.searchIterative(nums, toFind);
 
         //then
         int expected = -1;
@@ -49,7 +50,7 @@ class BinarySearchTest {
         int toFind = 1;
 
         //when
-        int result = searcher.binarySearch(nums, toFind);
+        int result = searcher.searchIterative(nums, toFind);
 
         //then
         int expected = 0;
@@ -63,7 +64,7 @@ class BinarySearchTest {
         int toFind = 4;
 
         //when
-        int result = searcher.binarySearch(nums, toFind);
+        int result = searcher.searchIterative(nums, toFind);
 
         //then
         int expected = -1;
@@ -77,7 +78,7 @@ class BinarySearchTest {
         int toFind = 0;
 
         //when
-        int result = searcher.binarySearch(nums, toFind);
+        int result = searcher.searchIterative(nums, toFind);
 
         //then
         int expected = 2;
@@ -91,7 +92,7 @@ class BinarySearchTest {
         int toFind = 8;
 
         //when
-        int result = searcher.binarySearch(nums, toFind);
+        int result = searcher.searchIterative(nums, toFind);
 
         //then
         int expected = 6;

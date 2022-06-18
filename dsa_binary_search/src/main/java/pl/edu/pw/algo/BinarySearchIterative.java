@@ -1,9 +1,11 @@
 package pl.edu.pw.algo;
 
-public class BinarySearch implements SearcherIterative {
+import pl.edu.pw.algo.Interfaces.SearcherIterative;
+
+public class BinarySearchIterative implements SearcherIterative {
 
     @Override
-    public int binarySearch(int[] arr, int target) {
+    public int searchIterative(int[] arr, int target) {
 
         int result = -1;
 
